@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&display=swap');
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    height: 320px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.video-container {
+    position: absolute;
+    z-index: -100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vw*0.5625);
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+table {
+    border: solid black 1px;
+    -webkit-box-shadow: 1px 3px 11px 5px rgba(0, 0, 0, 0.92);
+    box-shadow: 1px 3px 11px 5px rgba(0, 0, 0, 0.92);
+    margin: auto;
+}
+
+td {
+    border: solid black 1px;
+    height: 33px;
+    width: 33px;
+    text-align: center;
+}
+
+#enuncido {
+    font-size: 0.5em;
+    height: 50px;
+}
+
+#lugar {
+    margin: 40px 20px;
+}
+
+#resultado {
+    padding-left: 20px;
+    text-align: left;
+    font-size: 1em;
+    padding-top: 40px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 210px;
+    margin: 20px auto;
+    opacity: 70%;
+    border-radius: 12px;
+}
+
+#new {
+    text-align: center;
+    margin-top: -40px;
+}
+
+#annadido {
+    text-align: center;
+    display: inline-flex;
+}
+
+.cuerpoMenu {
+    background-position: center center;
+    height: 1080px;
+    width: 100%;
+    animation-name: nada;
+    background-attachment: fixed;
+}
+
+body {
+    background-image: url(../assets/Fondos-para-páginas-web.jpg);
+    background-position: center center;
+    text-align: center;
+    align-items: center center;
+    animation-duration: 2s;
+    animation-name: slidein;
+    width: 100%;
+    height: 100%;
+    align-items: center center;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes nada {
+    from {
+        margin-left: 100%;
+        width: 100%
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.titulo {
+    text-align: center;
+    font-family: Arial Black;
+    font-weight: 300;
+    font-size: 80px;
+    background: #202020;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.4), 0px -1px 1px rgba(0, 0, 0, 0.3);
+}
+
+#annadido input {
+    margin-right: 7px;
+}
+
+#enviar {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+button {
+    border-radius: 25px;
+}
+
+.tapado {
+    color: rgb(116, 116, 116);
+    background-color: rgb(116, 116, 116);
+    height: 33px;
+    width: 33px;
+    -webkit-box-shadow: inset 4px -2px 20px -7px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 4px -2px 20px -7px rgba(0, 0, 0, 0.5);
+}
+
+.pregunta {
+    color: rgb(116, 116, 116);
+    height: 33px;
+    width: 33px;
+    background-image: url('../assets/pregunta.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 28px 28px;
+    -webkit-box-shadow: inset 4px -2px 20px -7px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 4px -2px 20px -7px rgba(0, 0, 0, 0.5);
+}
+
+.banderin {
+    color: rgb(116, 116, 116);
+    height: 33px;
+    width: 33px;
+    background-image: url('../assets/bandera.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 28px 28px;
+    -webkit-box-shadow: inset 4px -2px 20px -7px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 4px -2px 20px -7px rgba(0, 0, 0, 0.5);
+}
+
+#play,
+#options {
+    margin-top: 17px;
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid #c4016c;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font: normal 32px/normal "Lucida Console", Monaco, monospace;
+    color: rgba(255, 255, 255, 0.9);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: rgba(40, 40, 40, 0.64);
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.43);
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.43);
+    text-shadow: -1px -1px 0 rgba(130, 14, 165, 0.74);
+}
+
+#play:hover,
+#options:hover {
+    -webkit-transform: scaleX(0.9) scaleY(0.9);
+    transform: scaleX(0.9) scaleY(0.9);
+}
+
+.tituloMenu {
+    margin-bottom: 25px;
+    align-items: center center;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 150px;
+    color: rgb(206, 30, 241);
+    text-shadow: 0 1px 0 #acacac, 0 2px 0 rgb(133, 133, 133), 0 3px 0 rgb(114, 114, 114), 0 4px 0 rgb(83, 83, 83), 0 5px 0 #272727, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.destapado {
+    color: rgb(23, 23, 48);
+    background-color: rgb(255, 255, 255);
+    height: 33px;
+    width: 33px;
+    float: none;
+}
+
+#filada {
+    margin-top: 42px;
+    margin-bottom: 4px;
+    color: #f875bd;
+}
+
+#columnada {
+    margin-bottom: 4px;
+    color: #ff8cf5;
+}
+
+input {
+    background-color: rgba(173, 216, 230, 0.178);
+    color: rgb(255, 255, 255);
+    height: 30px;
+    width: 150px;
+    border: solid 1px rgb(252, 90, 139);
+}
+
+#botonExit {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
